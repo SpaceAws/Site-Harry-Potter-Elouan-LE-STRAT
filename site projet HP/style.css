@@ -1,0 +1,399 @@
+/*Base commune à tous les sites*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kode Mono";
+}
+
+
+/*Gestion de l'affichage des images*/
+.logo{
+    width: 110px;
+}
+.img-1{
+    width: 250px;
+    margin: 5px;
+}
+.img-2{
+    width: 500px;
+}
+.img-3{
+    width: 50px;
+}
+.img-4{
+    width: 30px;
+    padding-top: 32px;
+}
+.img-5, .img-7{
+    width: 100px;
+}
+.img-6{
+    width: 700px;
+    margin-left: 240px;
+    margin-right: 240px;
+}
+.img-8{
+    width: 250px;
+}
+.img-8:hover{
+    width: 260px;
+}
+.barre{
+    width: 1200px;
+}
+
+
+/*Affichage des boosters du menu et animation de grossissement lors du hover*/
+.boosters{
+    width: 300px;
+}
+.boosters:hover{
+    width: 320px;
+}
+
+
+/*Affichages généraux*/
+h2{
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.center{
+    text-align: center;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-image: url(bandeau.png);
+}
+
+/*Affichage du bandeau de haut de page*/
+.bandeau{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-left: 200px;
+}
+.bandeau-bg{
+    background-image: url(bandeau.png);
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+.title{
+    font-size: 40px;
+    color: white;
+}
+.title-2{
+    color: white;
+}
+
+
+/*Affichage des zones principales du site*/
+.main-part{
+    background-color: burlywood;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.main-part-2{
+    background-color: burlywood;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.background{
+    background-image: url(background.png);
+}
+.flex-container-1{
+    display: flex;
+    justify-content: center;
+}
+.flex-container-list{
+    display: flex;
+    justify-content: left;
+}
+.flex-container-800{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.texte-1{
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+}
+.texte-2{
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Classes de l'index*/
+.bloc-1{
+    padding-top: 150px;
+}
+.magasin-1{
+    text-align: left;
+    padding-left: 300px;
+    padding-bottom: 20px;
+}
+.texte-index{
+    padding-bottom: 25px;
+}
+
+
+/*Classes du magasin*/
+.texte-magasin{
+    padding-top: 60px;
+}
+.texte-magasin-1{
+    font-size: 18px;
+    padding-top: 65px;
+}
+#texte-magasin-2{
+    font-size: 18px;
+    padding-top: 25px;
+}
+#magasin{
+    text-align: left;
+    padding-left: 200px;
+}
+.flex-container-3{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 800px;
+    padding-left: 275px;
+    padding-bottom: 25px;
+}
+.flex-container-list-1{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+
+/*Classes de la page de connexion*/
+.texte-connect{
+    padding: 35px;
+}
+.texte-connect-1{
+    padding: 15px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*Classes de la collection*/
+.flex-container-collection{
+    display: flex;
+    justify-content: left;
+    padding-left: 210px;
+}
+
+
+/*Affichage des liens*/
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.link-2{
+    text-decoration: none;
+    color: black;
+    margin: 25px;
+    font-size: 20px;
+}
+.link:hover{
+    font-size: 28px;
+} 
+.link-1:hover, .link-2:hover{
+    font-size: 22px;
+}
+.fake-link{
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+/*Affichage lors de la réduction de taille de l'écran*/
+
+@media screen and (max-width: 800px){
+    
+    /*Affichages généraux*/
+    .main-part{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+    .main-part-2{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .barre{
+        width: 800px;
+    }
+    h2{
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /*Affichage du bandeau*/
+    .title{
+        font-size: 30px;
+    }
+    .title-2{
+        font-size: 18px;
+    }
+    .bandeau{
+        display: flex;
+        justify-content: right;
+        justify-content: space-around;
+    }
+    .navigation{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding-bottom: 10px;
+    }
+    .logo{
+        width: 50px;
+    }
+    .img-1{
+        width: 150px;
+    }
+
+    /*Affichage des liens*/
+    .link{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    .link-2{
+        text-decoration: none;
+        color: black;
+        margin: 25px;
+        font-size: 16px;
+    }
+    .link:hover, .link-1:hover, .link-2:hover{
+        font-size: 18px;
+    }
+
+    /*Affichage de l'index*/
+    .magasin-1{
+        text-align: left;
+        padding-left: 100px;
+        padding-bottom: 20px;
+    }
+    .texte-1{
+        font-size: 16px;
+        padding: 20px;
+        text-align: center;
+    }
+    .texte-2{
+        font-size: 18px;
+        padding: 20px;
+        text-align: center;
+    }
+    .boosters{
+        width: 200px;
+    }
+    .boosters:hover{
+        width: 220px;
+    }
+    .bloc-1{
+        width: 700px;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .flex-container-800{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img-800{
+        padding-left: 140px;
+        padding-bottom: 10px;
+    }
+
+    /*Affichage du magasin*/
+    #magasin{
+        text-align: left;
+        padding-left: 120px;
+    }
+    .flex-container-3{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        width: 800px;
+        padding-right: 420px;
+        padding-bottom: 10px;
+    }
+    .flex-container-list-1{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    .img-4{
+        width: 30px;
+        padding-top: 32px;
+    }
+    .flex-container-list{
+        display: flex;
+        justify-content: left;
+    }
+    .img-5, .img-7{
+        width: 80px;
+    }
+
+    /*Affichage de la page de connexion*/
+    .texte-connect{
+        padding: 35px;
+    }
+    .main-part-connect{
+        margin: 10px;
+    }
+    .img-6{
+        width: 300px;
+    }
+
+    /*Affichage de la collection*/
+    .img-8{
+        width: 150px;
+    }
+    .img-8:hover{
+        width: 160px;
+    }
+    .flex-container-collection{
+        display: flex;
+        justify-content: left;
+        padding-left: 160px;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    
+    <!--Création de l'appellation du site et des références de font/css-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-witdth, initial-scale=1.0">
+        <title>Sorcerer's Inn</title>
+        <link rel="icon" href="logo.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!--Bandeau en haut du site pour le nom du site, la navigation et l'onglet de connexion-->
+        <header class="bandeau-bg">
+            <div class="bandeau">
+                <div>
+                    <img class="logo" src="logo.png">
+                </div>
+                <div class="center">
+                    <h1 class="title">Sorcerer's Inn</h1>
+                    <h2 class="title-2">Vente et collection de cartes à collectionner Harry Potter</h2>
+                </div>
+                <div class="connect">
+                    <p><a class="link" href="connect.html"><img class="img-1" src="connect.png" alt="Se Connecter"></a></p>
+                </div>
+            </div>
+
+            <!--Bandeau de navigation sur les différentes pages du site-->
+            <nav class="navigation">
+                <div>
+                    <p><a class="link" href="collection.html">Collection</a></p>
+                </div>
+                <div>
+                    <p><a class="link" href="index.html">Menu</a></p>
+                </div>
+                <div>
+                    <p><a class="link" href="magasin.html">Magasin</a></p>
+                </div>
+            </nav>
+        </header>
+
+        <!--Zone principale du site-->
+        <main class="background">
+            <main class="main-part-2">
+
+                <!--Premier bloc flex : barre d'information pour accéder à la recherche et savoir que l'on se trouve au magasin-->
+                <section class="flex-container-3">
+                    <div class="flex-container-1">
+                        <div class="flex-container-list-1">
+                            <label for="recherche">Rechercher...</label>
+                            <input type="text" name="recherche" id="recherche">
+                        </div>
+                        <div>
+                            <img class="img-4" src="search.png">
+                        </div>
+                    </div>
+                    <div>
+                        <h2>MAGASIN</h2>
+                    </div>
+                    <div>
+                        <p id="texte-magasin-2">Filtres</p>
+                    </div>
+                </section>
+                <img class="barre" src="barre.png">
+
+                <!--Deuxième bloc flex : les offres du moment-->
+                <div>
+                    <div class="flex-container">
+                        <h2>OFFRES DU MOMENT</h2>
+                        <p class="texte-2">Un booster offert pour toute personne qui s'inscrit sur le site !</p>
+                        <h2>OFFRES DU MOMENT</h2>
+                    </div>
+                </div>
+                <img class="barre" src="barre.png">
+
+                <!--Troisième bloc : une liste de blocs flex pour les différents produits de la boutique-->
+                <section id="magasin">
+                    <section class="flex-container-list">
+                        <div>
+                            <img class="img-5" src="booster harry.webp">
+                        </div>
+                        <div>
+                            <h2 class="texte-magasin">Booster Harry Potter Edition 1</h2>
+                        </div>
+                        <div>
+                            <p class="texte-magasin-1">4.99€</p>
+                        </div>
+                    </section>
+                    <section class="flex-container-list">
+                        <div>
+                            <img class="img-5" src="booster team.webp">
+                        </div>
+                        <div>
+                            <h2 class="texte-magasin">Booster Harry Potter Edition 2</h2>
+                        </div>
+                        <div>
+                            <p class="texte-magasin-1">5.99€</p>
+                        </div>
+                    </section>
+                    <section class="flex-container-list">
+                        <div>
+                            <img class="img-5" src="booster quidditch.webp">
+                        </div>
+                        <div>
+                            <h2 class="texte-magasin">Booster quidditch</h2>
+                        </div>
+                        <div>
+                            <p class="texte-magasin-1">6.99€</p>
+                        </div>
+                    </section>
+                </section>
+                <img class="barre" src="barre.png">
+
+                <!--Quatrième bloc : naviguer dans les pages du magasin-->
+                <div class="center">
+                    <p class="texte-1">Page 1 sur 1</p>
+                </div>
+            </main>
+        </main>
+
+        <!--Pied de page-->
+        <footer>
+            <p class="texte-1">Mentions Légales - 2024 - Elouan LE STRAT - Contact</p>
+        </footer>
+    </body>
+</html>

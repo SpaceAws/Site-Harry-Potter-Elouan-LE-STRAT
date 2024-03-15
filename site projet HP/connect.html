@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+    <!--Création de l'appellation du site et des références de font/css-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-witdth, initial-scale=1.0">
+        <title>Sorcerer's Inn</title>
+        <link rel="icon" href="logo.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main  class="background">
+
+            <!--Bandeau en haut du site pour le nom du site, la navigation et l'onglet de connexion-->
+            <header class="bandeau-bg">
+                <section class="bandeau">
+                    <div>
+                        <img class="logo" src="logo.png">
+                    </div>
+                    <div class="center">
+                        <h1 class="title">Sorcerer's Inn</h1>
+                        <h2 class="title-2">Vente et collection de cartes à collectionner Harry Potter</h2>
+                    </div>
+                    <div class="connect">
+                        <p><a class="link" href="connect.html"><img class="img-1" src="connect.png" alt="Se Connecter"></a></p>
+                    </div>
+                </section>
+
+                <!--Bandeau de navigation sur les différentes pages du site-->
+                <nav class="navigation">
+                    <div>
+                        <p><a class="link" href="collection.html">Collection</a></p>
+                    </div>
+                    <div>
+                        <p><a class="link" href="index.html">Menu</a></p>
+                    </div>
+                    <div>
+                        <p><a class="link" href="magasin.html">Magasin</a></p>
+                    </div>
+                </nav>
+            </header>
+            <!--Zone principale du site-->
+            <main class="main-part">
+
+                <!--Premier bloc : une image-->
+                <div>
+                    <img class="img-6" src="illustration HP-2.webp">
+                </div>
+
+                <!--Deuxième bloc : un formulaire permettant de se connecter, la connection ne fonctionne pas en l'état mais le retour au menu permet de le simuler-->
+                <h2 class="texte-connect-1">SE CONNECTER</h2>
+                <form method="post" action="index.html">
+                    <div class="texte-connect-1">
+                        <label for="id">Votre identifiant :</label>
+                        <input type="text" name="id" id="id">
+                    </div>
+                    <div class="texte-connect-1">
+                        <label for="mdp">Votre mot de passe :</label>
+                        <input type="text" name="mdp" id="mdp">
+                    </div>
+                    <div class="texte-connect-1">
+                        <a href="index.html"><button>Soumettre</button></a>
+                    </div>
+                    
+                </form>
+
+                <!--Création de faux liens qui ammèneraient normalement l'utilisateurs vers d'autres pages-->
+                <div>
+                    <p class="fake-link">Mot de passe oublié</p>
+                </div>
+                <div>
+                    <p class="fake-link">S'inscrire</p>
+                </div>
+            </main>
+
+            <!--Pied de page-->
+            <footer>
+                <p class="texte-1">Mentions Légales - 2024 - Elouan LE STRAT - Contact</p>
+            </footer>
+        </main>
+    </body>
+</html>
